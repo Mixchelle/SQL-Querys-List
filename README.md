@@ -1,49 +1,8 @@
 # SQL-Querys-List
 
-<style>
-  body {
-    background-color: #2c2a2a;
-    font-family: 'Harry Potter', sans-serif;
-    color: #767474;
-    text-align: justify;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #00060b;
-  }
-  
-  p {
-    font-size: 30px;
-   
 
-  }
-
-  code {
-    display: block;
-    padding: 10px;
-    background-color: #1e1e1e;
-    color: #ffffff;
-    margin-bottom: 20px;
-    width: 80%;
-    font-size: 25px;
-  }
-
-  ol {
-    padding-left: 40px;
-    text-align: left;
-  }
-
-  li {
-    margin-bottom: 20px;
-    font-size: 25px;
-  }
-</style>
 </head>
 <body>
-<h1>Título: SQL - Consultas e Cláusulas</h1>
 <p>Descrição:</p>
 <p>
 O SQL (Structured Query Language) é uma linguagem de programação usada para gerenciar e manipular bancos de dados relacionais. No SQL, existem várias consultas e cláusulas que permitem realizar operações específicas nos dados. Aqui estão algumas das consultas e cláusulas mais comuns:</p>
