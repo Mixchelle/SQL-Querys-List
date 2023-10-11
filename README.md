@@ -2,6 +2,7 @@
 
 ## Descrição 📝
 
+
 O SQL (Structured Query Language) é uma linguagem de programação usada para gerenciar e manipular bancos de dados relacionais. No SQL, existem várias consultas e cláusulas que permitem realizar operações específicas nos dados. Aqui estão algumas das consultas e cláusulas mais comuns:
 
 1. 📥 **SELECT:** A query SELECT é usada para recuperar dados de uma tabela ou exibir resultados de uma consulta. Ela permite selecionar colunas específicas ou todas as colunas (*). Exemplo:
