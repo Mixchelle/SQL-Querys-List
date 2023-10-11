@@ -297,4 +297,24 @@ body {
   
 
   /* Estilos para dispositivos móveis */
-
+  @media screen and (max-width: 767px) {
+    .resumo {
+      width: 80%; /* Cada "card" ocupará 90% da largura da tela */
+      margin: 0 auto; /* Centraliza horizontalmente */
+      margin-bottom: 20px;
+     /* Exemplo de borda para ilustração */
+    }
+  
+    .titulo {
+      width: 80%; /* O título ocupará 90% da largura da tela */
+      margin: auto; 
+    }
+    
+    li {
+      width: 80%; /* Cada "li" ocupará 90% da largura da tela */
+    }
+    .container{
+      width: 100%;
+      padding: 2px;
+    }
+    }
