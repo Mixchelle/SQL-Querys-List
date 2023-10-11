@@ -308,6 +308,7 @@ body {
     .titulo {
       width: 80%; /* O título ocupará 90% da largura da tela */
       margin: auto; 
+      margin-top: 20px;
     }
     
     li {
