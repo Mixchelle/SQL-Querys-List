@@ -297,18 +297,18 @@ body {
   /* Estilos para dispositivos móveis */
 @media screen and (max-width: 767px) {
   .resumo {
-    width: 90%; /* Cada "card" ocupará 90% da largura da tela */
+    width: 98%; /* Cada "card" ocupará 90% da largura da tela */
     margin: 0 auto; /* Centraliza horizontalmente */
     margin-bottom: 20px;
   }
 
   .titulo {
-    width: 90%; /* O título ocupará 90% da largura da tela */
+    width: 98%; /* O título ocupará 90% da largura da tela */
     margin: 20px auto; /* Centraliza horizontalmente */
   }
   
   .li {
-    width: 90%; /* Cada item da lista ocupa 90% da largura da tela */
+    width: 98%; /* Cada item da lista ocupa 90% da largura da tela */
     margin: 0 auto; /* Centraliza horizontalmente */
   }
 }
