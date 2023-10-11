@@ -11,7 +11,8 @@ body {
 }
 
 .background {
-  background-image: url('./wp3621289.jpg');
+  background-color:#f1f4f7;
+  background-image: url('./fundo.jpg');
   background-size: cover;
   filter: blur(5px); /* Ajuste o valor de '5px' para controlar o nível de desfoque desejado */
   position: fixed;
@@ -36,8 +37,9 @@ body {
   margin-right: auto;
   margin-left: auto;
   border: 1px solid white;
-  background-color: rgba(1, 32, 18, 0.8); 
+  background-color: rgba(0, 10, 6, 0.8); 
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .icon{
@@ -47,8 +49,8 @@ body {
 .footer {
   padding: 1px;
   width: 100%;
-  background-color: rgba(254, 255, 255, 0.5); 
-  color: black;
+  background-color: rgba(3, 59, 59, 0.2); 
+  color: rgb(243, 239, 239);
 
 }
   
@@ -66,12 +68,12 @@ body {
   
   .titulo {
     text-align: center;
-    width: 90%;
+    width: 70%;
 
     margin-left: auto;
     margin-right: auto;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo translúcido */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido */
     border: 2px solid #00ffcc; /* Borda neon */
     border-radius: 10px;
     padding: 20px;
@@ -81,7 +83,15 @@ body {
   
   .titulo h1 {
     font-size: 24px;
-    color:#00ffcc
+    color:#00ffcc;
+    
+  }
+
+  ul{
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding: 10px;
   }
   
   .titulo::before {
@@ -91,7 +101,7 @@ body {
     width: 50px;
     height: 50px;
     position: absolute;
-    left: 20px;
+  
     top: 50%;
     transform: translateY(-50%);
   }
