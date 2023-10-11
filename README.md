@@ -1,20 +1,64 @@
-# SQL-Querys-List
 
-
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const codeElements = document.querySelectorAll("code");
+      codeElements.forEach(function(codeElement) {
+        const codeText = codeElement.innerHTML;
+        const keywords = codeText.match(/\b(SELECT|INSERT|UPDATE|DELETE|WHERE|ORDER BY|JOIN|DISTINCT|GROUP BY|HAVING|LIMIT|BETWEEN|LIKE|UNION|AVG|SUM|COUNT|MAX|MIN|EXISTS|IN|NOT)\b/g);
+        if (keywords) {
+          keywords.forEach(function(keyword) {
+            codeElement.innerHTML = codeElement.innerHTML.replace(keyword, `<span class="span">${keyword}</span>`);
+          });
+        }
+        
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.innerHTML = `
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+              <span class="green box"></span>
+            </div>
+          </div>
+          <div class="card__content">
+            ${codeElement.outerHTML}
+          </div>
+        `;
+        codeElement.parentNode.replaceChild(card, codeElement);
+      });
+    });
+  </script>
 </head>
 <body>
-<p>Descrição:</p>
+  <div class="background"></div>
+  <div class="content">
+
+<div class="titulo">
+<h1>SQL - Consultas e Cláusulas</h1>
 <p>
 O SQL (Structured Query Language) é uma linguagem de programação usada para gerenciar e manipular bancos de dados relacionais. No SQL, existem várias consultas e cláusulas que permitem realizar operações específicas nos dados. Aqui estão algumas das consultas e cláusulas mais comuns:</p>
-
-<ol>
+</div>
+<br>
+<br>
+<div class="container">
+<ul>
   <li>
     <strong>SELECT:</strong> A query SELECT é usada para recuperar dados de uma tabela ou exibir resultados de uma consulta. Ela permite selecionar colunas específicas ou todas as colunas (*). Exemplo:<br><br>
-    <code>SELECT coluna1, coluna2 FROM tabela;</code>
+    <code>SELECT coluna1, coluna2FROM tabela;</code>
+
   </li>
   <li>
     <strong>INSERT:</strong> A query INSERT é usada para inserir novos registros em uma tabela. Ela especifica a tabela alvo e os valores a serem inseridos nas colunas correspondentes. Exemplo:<br><br>
-    <code>INSERT INTO tabela (coluna1, coluna2) VALUES (valor1, valor2);</code>
+    <code>NSERT INTO tabela (coluna1, coluna2) VALUES (valor1, valor2);</code>
   </li>
   <li>
     <strong>UPDATE:</strong> A query UPDATE é usada para modificar os dados existentes em uma tabela. Ela atualiza os valores das colunas especificadas com novos valores. Exemplo:<br><br>
@@ -90,11 +134,133 @@ O SQL (Structured Query Language) é uma linguagem de programação usada para g
   </li>
   <li>
     <strong>IN:</strong> A cláusula IN é usada para verificar se um valor corresponde a qualquer valor em uma lista especificada. Exemplo:<br><br>
-    <code>SELECT coluna FROM tabela WHERE coluna IN (valor1, valor2, valor3);</code>
+    <code>SELECT coluna  FROM tabela  WHERE coluna IN (valor1, valor2, valor3);</code>
   </li>
   <li>
     <strong>NOT:</strong> O operador NOT é usado para negar uma condição em uma cláusula WHERE. Ele retorna registros que não atendem à condição especificada. Exemplo:<br><br>
     <code>SELECT coluna FROM tabela WHERE NOT condição;</code>
   </li>
-</ol>
+  <li>
+    <div class="sql-table">
+      <div class="code-editor">
+        <div class="header">
+          <span class="title">SQL</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+            <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+            <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M6 6L18 18"></path>
+              <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M18 6L6 18"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="editor-content">
+          <span class="code">
+            <p><span class="color-0">CREATE TABLE IF NOT EXISTS</span> <span class="color-1">Tabela1</span> <span>(</span></p>
+            <p class="property">
+              <span class="color-2">ID</span> <span class="color-3">INT</span> <span>PRIMARY KEY,</span>
+            </p>
+            <p class="property">
+              <span class="color-2">Nome</span> <span class="color-3">VARCHAR(255),</span>
+            </p>
+            <p class="property">
+              <span class="color-2">DataCriacao</span> <span class="color-3">DATE</span>
+            </p>
+            <p><span>)</span> <span class="color-0">ENGINE=InnoDB;</span></p>
+      
+            
+          </span>
+        </div>
+      </div>
+ 
+    </div>
+  </li>
+  <li>     <div class="code-editor">
+    <div class="header">
+      <span class="title">SQL</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M6 6L18 18"></path>
+          <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M18 6L6 18"></path>
+        </g>
+      </svg>
+    </div>
+    <div class="editor-content">
+      <span class="code">
+        <p><span class="color-0">CREATE TABLE IF NOT EXISTS</span> <span class="color-1">Tabela2</span> <span>(</span></p>
+        <p class="property">
+          <span class="color-2">ID</span> <span class="color-3">INT</span> <span>PRIMARY KEY,</span>
+        </p>
+        <p class="property">
+          <span class="color-2">Descricao</span> <span class="color-3">TEXT,</span>
+        </p>
+        <p class="property">
+          <span class="color-2">Quantidade</span> <span class="color-3">INT</span>
+        </p>
+        <p><span>)</span> <span class="color-0">ENGINE=InnoDB;</span></p>
+  
+        
+      </span>
+    </div>
+  </div></li>
+</ul>
+<br>
+<br>
+
+
+</div>
+<div class="resumo">
+  <h2>Dados e Curiosidades sobre SQL</h2>
+  <p>
+    O SQL é uma linguagem poderosa e amplamente utilizada no mundo da tecnologia e bancos de dados. Aqui estão algumas informações interessantes sobre o SQL:
+  </p>
+
+  <p>
+    Origem: O SQL foi originalmente desenvolvido pela IBM na década de 1970, mas agora é um padrão ANSI (American National Standards Institute) e ISO (International Organization for Standardization).
+  </p>
+
+  <p>
+    Variações: Existem várias variações do SQL, como o MySQL, PostgreSQL, Oracle SQL e SQL Server, que possuem suas próprias extensões e recursos específicos.
+  </p>
+
+  <p>
+    Transações ACID: SQL é usado em sistemas de banco de dados que aderem ao conceito ACID (Atomicidade, Consistência, Isolamento e Durabilidade) para garantir a integridade dos dados e a confiabilidade das operações.
+  </p>
+
+  <p>
+    SQL e NoSQL: Embora o SQL seja tradicionalmente associado a bancos de dados relacionais, muitos sistemas NoSQL também suportam uma forma de consulta SQL para flexibilidade e compatibilidade.
+  </p>
+
+  <p>
+    Linguagem Universal: O SQL é amplamente reconhecido e utilizado em todo o mundo. É uma linguagem de consulta universalmente compreendida por desenvolvedores e administradores de bancos de dados.
+  </p>
+
+  <p>
+    Bancos de Dados Populares: Alguns dos bancos de dados relacionais mais populares que usam SQL incluem MySQL, PostgreSQL, Oracle Database e Microsoft SQL Server.
+  </p>
+
+  <p>
+    SQL e Big Data: Embora o SQL tenha sido desenvolvido para bancos de dados relacionais, ele também é usado em sistemas de Big Data, como o Apache Hive e o Apache HBase, para consultas complexas.
+  </p>
+
+  <p>
+    O SQL desempenha um papel fundamental na coleta, armazenamento, recuperação e análise de dados em uma ampla gama de aplicações e setores, tornando-se uma ferramenta essencial para profissionais de tecnologia da informação e desenvolvedores de software.
+  </p>
+</div>
+
+<footer class="footer">
+
+  <div class="contact-list">
+    <p>Michelle Marquez  
+      <a href="https://www.linkedin.com/in/mixchelle/" target="_blank"><img class="icon" src="linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://github.com/Mixchelle" target="_blank"><img class="icon" src="github.svg" alt="GitHub"></a>
+    </p>
+  </div>
+
+</footer>
+
 </body>
+</html>
+
