@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+}
+
+body {
+  font-family: 'Harry Potter', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url('./wp3621289.jpg');
+  background-size: cover;
+  filter: blur(5px); /* Ajuste o valor de '5px' para controlar o nível de desfoque desejado */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca o elemento de fundo atrás do conteúdo da página */
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1; 
+}
+
+.resumo{
+  border-radius: 10px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid white;
+  background-color: rgba(1, 32, 18, 0.8); 
+  margin-bottom: 20px;
+}
+
+.icon{
+  width: 10px;
+}
+
+.footer {
+  padding: 1px;
+  width: 100%;
+  background-color: rgba(254, 255, 255, 0.5); 
+  color: black;
+
+}
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00060b;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  .titulo {
+    text-align: center;
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo translúcido */
+    border: 2px solid #00ffcc; /* Borda neon */
+    border-radius: 10px;
+    padding: 20px;
+    position: relative; 
+    margin-top: 20px;
+  }
+  
+  .titulo h1 {
+    font-size: 24px;
+    color:#00ffcc
+  }
+  
+  .titulo::before {
+    content: "";
+    display: block;
+    background-size: 50px 50px; /* Tamanho do ícone */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  .container {
+    width: 70%;
+    text-align: justify;
+    background-color: transparent;
+    margin: 0 auto;
+    border: 1px solid ridge;
+    padding: 20px;
+  }
+  
+  ol {
+    text-align: justify;
+    padding: 20px;
+  }
+  
+  li {
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    width: 80%;
+    padding: 20px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .red{
+    color: red;
+  }
+
+  .span{
+    color: #da0505;
+  }
+  
+  code {
+    font-family: "Courier New", Courier, monospace;
+    color:#f1f4f7;
+    padding: 5px;
+}
+  
+
+
+
+.card {
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #011522;
+  border-radius: 8px;
+  z-index: 1;
+  padding: 10px;
+ }
+ 
+ .tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+ }
+ 
+ .circle {
+  padding: 0 4px;
+ }
+ 
+ .box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+ }
+ 
+ .red {
+  background-color: #ff605c;
+ }
+ 
+ .yellow {
+  background-color: #ffbd44;
+ }
+ 
+ .green {
+  background-color: #00ca4e;
+ }
+ 
+
+  strong {
+    color: #3d0bc7; /* Cor do Visual Studio Code */
+}
+  .code.sql {
+    color: #ffcd22;
+  }
+  
+  .select {
+    color: #79e1fa;
+  }
+  
+  .from {
+    color: #c3a1ff;
+  }
+  
+  .column {
+    color: #ffcc80;
+  }
+
+
+  .code-editor {
+    max-width: 300px;
+    background-color: #011522;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .title {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1.57px;
+    color: rgb(212 212 212);
+  }
+  
+  .icon {
+    width: 20px;
+    transition: .2s ease;
+  }
+  
+  .icon:hover {
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #6e7281;
+  }
+  
+  .editor-content {
+    margin: 0 10px 10px;
+    color: white;
+  }
+  
+  .property {
+    margin-left: 30px;
+  }
+  
+  .property:hover {
+    cursor: text;
+  }
+  
+  .editor-content .color-0 {
+    color: rgb(86 156 214);
+  }
+  
+  .editor-content .color-1 {
+    color: rgb(182 206 168);
+  }
+  
+  .editor-content .color-2 {
+    color: rgb(156 220 254);
+  }
+  
+  .editor-content .color-3 {
+    color: rgb(207 146 120);
+  }
+  
+  .color-preview-1,.color-preview-2 {
+    height: 8px;
+    width: 8px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-right: 3px;
+  }
+  
+  .color-preview-1 {
+    background-color: #1d1e22;
+  }
+  
+  .color-preview-1 {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
