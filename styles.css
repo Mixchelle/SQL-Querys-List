@@ -29,6 +29,8 @@ body {
   flex-direction: column;
   justify-content: center;
   z-index: 1; 
+  background-color: rgba(3, 59, 59, 0.2); 
+
 }
 
 .resumo{
@@ -151,8 +153,8 @@ body {
 
 
 .card {
-  width: 500px;
-  height: 100px;
+  width: 80%;
+  height: auto;
   margin: 0 auto;
   background-color: #011522;
   border-radius: 8px;
@@ -295,20 +297,4 @@ body {
   
 
   /* Estilos para dispositivos móveis */
-@media screen and (max-width: 767px) {
-  .resumo {
-    width: 98%; /* Cada "card" ocupará 90% da largura da tela */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    margin-bottom: 20px;
-  }
 
-  .titulo {
-    width: 98%; /* O título ocupará 90% da largura da tela */
-    margin: 20px auto; /* Centraliza horizontalmente */
-  }
-  
-  .li {
-    width: 98%; /* Cada item da lista ocupa 90% da largura da tela */
-    margin: 0 auto; /* Centraliza horizontalmente */
-  }
-}
